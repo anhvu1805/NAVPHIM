@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Captain America: Brave New World",
+    "year": 2026,
+    "category": "Hành động",
+    "quality": "4K",
+    "poster": "https://image.tmdb.org/t/p/w500/8S9U0S9U0S9U0S9U0S9U0.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Avatar: Fire and Ash",
+    "year": 2026,
+    "category": "Viễn tưởng",
+    "quality": "8K",
+    "poster": "https://image.tmdb.org/t/p/w500/t6SnaI0YvSjriZneC9uev32o9gn.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Avengers: Secret Wars",
+    "year": 2026,
+    "category": "Siêu anh hùng",
+    "quality": "4K",
+    "poster": "https://image.tmdb.org/t/p/w500/7WsyChTjaGZpSndhw6n5Kyoasj.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Batman Part II",
+    "year": 2026,
+    "category": "Hành động",
+    "quality": "Full HD",
+    "poster": "https://image.tmdb.org/t/p/w500/v7baGDq09uSfsXv5aB7vSfsXv5a.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Super Mario Bros. Movie 2",
+    "year": 2026,
+    "category": "Hoạt hình",
+    "quality": "4K",
+    "poster": "https://image.tmdb.org/t/p/w500/q7Xv5aB7vSfsXv5aB7vSfsXv5a.jpg"
+  }
+]

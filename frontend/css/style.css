@@ -1,0 +1,138 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    background: #080808; 
+    color: white; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+.app { 
+    display: flex; 
+    min-height: 100vh; 
+}
+
+/* Sidebar */
+.sidebar { 
+    width: 240px; 
+    background: #111; 
+    padding: 30px 20px; 
+    border-right: 1px solid #222; 
+    position: fixed;
+    height: 100vh;
+}
+
+/* Khu vực Logo ảnh - Đã được gộp và tối ưu */
+.logo-box {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.my-logo {
+    max-width: 100%; /* Ảnh tự co giãn theo chiều rộng sidebar */
+    height: auto;    /* Không bị méo ảnh */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Bo góc nhẹ cho đẹp */
+    filter: drop-shadow(0 0 5px rgba(229, 9, 20, 0.5)); /* Tạo hiệu ứng phát sáng đỏ nhẹ */
+    transition: 0.3s;
+}
+
+.my-logo:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi di chuột */
+}
+
+/* Nút bấm trên Sidebar */
+.sidebar button { 
+    display: block; 
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 10px;
+    background: transparent; 
+    color: #888; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    text-align: left; 
+    font-size: 16px; 
+    transition: 0.3s;
+}
+
+.sidebar button i { 
+    margin-right: 10px; 
+}
+
+.sidebar button:hover { 
+    background: #e50914; 
+    color: white; 
+}
+
+/* Main Content */
+.content { 
+    flex: 1; 
+    margin-left: 240px; 
+    padding: 40px; 
+}
+
+.movie-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 25px; 
+}
+
+/* Thẻ phim */
+.movie-card { 
+    background: #1a1a1a; 
+    padding: 15px; 
+    border-radius: 12px; 
+    border: 1px solid #333; 
+    transition: 0.3s; 
+}
+
+.movie-card:hover { 
+    transform: translateY(-5px); 
+    border-color: #e50914; 
+}
+
+.movie-card h3 { 
+    font-size: 16px; 
+    margin: 12px 0; 
+}
+
+.badge { 
+    background: red; 
+    padding: 3px 8px; 
+    font-size: 11px; 
+    border-radius: 4px; 
+    font-weight: bold; 
+}
+.search-container {
+    display: flex;
+    margin-bottom: 30px;
+    background: #1a1a1a;
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: 1px solid #333;
+}
+
+.search-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-container button {
+    background: transparent;
+    border: none;
+    color: #e50914;
+    cursor: pointer;
+    font-size: 18px;
+}
