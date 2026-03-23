@@ -1,42 +1,65 @@
 [
   {
     "id": 1,
+    "title": "Avatar: Fire and Ash",
+    "year": 2025,
+    "category": "Viễn tưởng",
+    "quality": "8K",
+    "poster": "img/avatar-fire-and-ash.jpg",
+    "description": "Cuộc chiến mới trên hành tinh Pandora, nơi người Na'vi phải đối mặt với bộ tộc lửa hung hãn."
+  },
+  {
+    "id": 2,
     "title": "Captain America: Brave New World",
     "year": 2026,
     "category": "Hành động",
     "quality": "4K",
-    "poster": "https://image.tmdb.org/t/p/w500/8S9U0S9U0S9U0S9U0S9U0.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Avatar: Fire and Ash",
-    "year": 2026,
-    "category": "Viễn tưởng",
-    "quality": "8K",
-    "poster": "https://image.tmdb.org/t/p/w500/t6SnaI0YvSjriZneC9uev32o9gn.jpg"
+    "poster": "img/captain-america-brave-new-world.jpg",
+    "description": "Sam Wilson chính thức tiếp nhận khiên và đối mặt với một âm mưu toàn cầu phức tạp."
   },
   {
     "id": 3,
-    "title": "Avengers: Secret Wars",
+    "title": "one piece đảo hải tặc",
     "year": 2026,
-    "category": "Siêu anh hùng",
-    "quality": "4K",
-    "poster": "https://image.tmdb.org/t/p/w500/7WsyChTjaGZpSndhw6n5Kyoasj.jpg"
+    "category": "Hoạt hình",
+    "quality": "Full HD",
+    "poster": "img/one-piece-deo-hai-tac.jpg",
+    "description": "Cuộc phiêu lưu mới đầy kịch tính của băng mũ rơm tại một hòn đảo kỳ diệu."
   },
   {
     "id": 4,
-    "title": "The Batman Part II",
-    "year": 2026,
-    "category": "Hành động",
-    "quality": "Full HD",
-    "poster": "https://image.tmdb.org/t/p/w500/v7baGDq09uSfsXv5aB7vSfsXv5a.jpg"
-  },
-  {
-    "id": 5,
     "title": "Super Mario Bros. Movie 2",
     "year": 2026,
     "category": "Hoạt hình",
     "quality": "4K",
-    "poster": "https://image.tmdb.org/t/p/w500/q7Xv5aB7vSfsXv5aB7vSfsXv5a.jpg"
+    "poster": "img/super-mario-bros-movie-2.jpg",
+    "description": "Cuộc phiêu lưu mới đầy màu sắc của anh em nhà Mario trong thế giới nấm kỳ diệu."
+  },
+  {
+    "id": 5,
+    "title": "The Batman Part II",
+    "year": 2026,
+    "category": "Hành động",
+    "quality": "Full HD",
+    "poster": "img/the-batman-part-ii.jpg",
+    "description": "Bruce Wayne tiếp tục hành trình truy tìm công lý trong bóng tối tại thành phố Gotham."
+  },
+  {
+    "title": "Superman",
+    "year": 2024,
+    "category": "Khoa Học Viễn Tưởng",
+    "quality": "4K",
+    "poster": "img/superman.jpg",
+    "description": "Superman là bộ phim siêu anh hùng năm 2025 của Hoa Kỳ dựa trên nhân vật cùng tên của DC Comics. Phim do DC Studios sản xuất và được Warner Bros. Pictures phân phối. Đây là phần phim đầu tiên của Vũ trụ DC và đồng thời cũng là bộ phim tái khởi động của loạt phim về Superman",
+    "id": 8
+  },
+  {
+    "title": "Doraemon Nobita và bản giao hưởng Địa Cầu",
+    "year": 2024,
+    "category": "Phim hoạt hình , phiêu lưu ",
+    "quality": "4K",
+    "poster": "Doraemon Nobita và bản giao hưởng Địa Cầu.jpg",
+    "description": "Doraemon: Nobita và bản giao hưởng Địa Cầu là bộ phim hoạt hình phiêu lưu, khoa học viễn tưởng Nhật Bản năm 2024. Đây là phim điện ảnh thứ 43 trong loạt phim điện ảnh Doraemon",
+    "id": 9
   }
 ]

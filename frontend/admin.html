@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - NAVPHIM</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; display: flex; gap: 20px; padding: 20px; margin: 0; }
+        .form-section { width: 350px; background: #111; padding: 20px; border-radius: 8px; height: fit-content; }
+        .list-section { flex: 1; background: #111; padding: 20px; border-radius: 8px; }
+        input, select, textarea { width: 100%; padding: 10px; margin: 8px 0; background: #222; border: 1px solid #333; color: #fff; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background: #e50914; border: none; color: #fff; font-weight: bold; cursor: pointer; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #222; }
+        img { width: 60px; height: 85px; object-fit: cover; border-radius: 4px; background: #333; display: block; }
+        .del-btn { background: #333; color: #ff4d4d; border: 1px solid #444; padding: 5px 10px; cursor: pointer; }
+        .del-btn:hover { background: #ff4d4d; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="form-section">
+        <h2>Thêm Phim</h2>
+        <input type="text" id="title" placeholder="Tên phim">
+        <input type="number" id="year" value="2026">
+        <input type="text" id="category" placeholder="Thể loại">
+        <select id="quality"><option>4K</option><option>8K</option><option>Full HD</option></select>
+        <input type="text" id="poster" placeholder="Tên file (Vd: anh1.jpg)">
+        <textarea id="description" placeholder="Mô tả" rows="3"></textarea>
+        <button onclick="saveMovie()">LƯU PHIM</button>
+        <p style="text-align:center"><a href="index.html" style="color:#888; text-decoration:none; font-size:14px;">Quay lại Trang chủ</a></p>
+    </div>
+
+    <div class="list-section">
+        <h2>Danh Sách Quản Lý</h2>
+        <table>
+            <thead><tr><th>Ảnh</th><th>Tên phim</th><th>Năm</th><th>Xóa</th></tr></thead>
+            <tbody id="list"></tbody>
+        </table>
+    </div>
+
+    <script>
+        function fixPath(p) {
+            if (!p) return 'https://via.placeholder.com/60x85?text=No+Img';
+            if (p.startsWith('http')) return p;
+            if (p.startsWith('img/')) return p;
+            return 'img/' + p;
+        }
+
+        async function load() {
+            const res = await fetch('http://localhost:3000/api/movies');
+            const movies = await res.json();
+            document.getElementById('list').innerHTML = movies.map(m => `
+                <tr>
+                    <td><img src="${fixPath(m.poster)}" onerror="this.src='https://via.placeholder.com/60x85?text=Lỗi'"></td>
+                    <td>${m.title}</td>
+                    <td>${m.year}</td>
+                    <td><button class="del-btn" onclick="del(${m.id})">Xóa</button></td>
+                </tr>
+            `).join('');
+        }
+
+        async function saveMovie() {
+            const movie = {
+                title: document.getElementById('title').value,
+                year: parseInt(document.getElementById('year').value),
+                category: document.getElementById('category').value,
+                quality: document.getElementById('quality').value,
+                poster: document.getElementById('poster').value,
+                description: document.getElementById('description').value
+            };
+
+            if(!movie.title || !movie.poster) return alert("Vui lòng nhập tên và tên file ảnh!");
+
+            await fetch('http://localhost:3000/api/movies', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(movie)
+            });
+            location.reload();
+        }
+
+        async function del(id) {
+            if (confirm('Xóa phim này?')) {
+                await fetch(`http://localhost:3000/api/movies/${id}`, { method: 'DELETE' });
+                load();
+            }
+        }
+        load();
+    </script>
+</body>
+</html>
