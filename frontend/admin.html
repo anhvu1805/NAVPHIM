@@ -19,6 +19,7 @@
 <body>
     <div class="form-section">
         <h2>Thêm Phim</h2>
+        <input type="text" id="videoUrl" placeholder="Link file video (.mp4)">
         <input type="text" id="title" placeholder="Tên phim">
         <input type="number" id="year" value="2026">
         <input type="text" id="category" placeholder="Thể loại">
@@ -65,7 +66,8 @@
                 category: document.getElementById('category').value,
                 quality: document.getElementById('quality').value,
                 poster: document.getElementById('poster').value,
-                description: document.getElementById('description').value
+                description: document.getElementById('description').value,
+                videoUrl: document.getElementById('videoUrl').value
             };
 
             if(!movie.title || !movie.poster) return alert("Vui lòng nhập tên và tên file ảnh!");

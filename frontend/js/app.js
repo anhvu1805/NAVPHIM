@@ -1,5 +1,7 @@
+console.log = function() {};
+console.warn = function() {};
+console.error = function() {};
 let allMovies = [];
-
 async function loadMovies() {
     try {
         const response = await fetch('http://localhost:3000/api/movies');
@@ -79,6 +81,19 @@ function openModal(movie) {
 function closeModal() {
     document.getElementById('movieModal').style.display = 'none';
     document.getElementById('modal-body').innerHTML = '';
-}
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    }
+    document.addEventListener('contextmenu', event => event.preventDefault());
 
+document.onkeydown = function (e) {
+    if (e.keyCode == 123) { 
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+    }
+};
 window.onload = loadMovies;
