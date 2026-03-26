@@ -7,7 +7,8 @@
     "quality": "8K",
     "poster": "img/avatar-fire-and-ash.jpg",
     "description": "Cuộc chiến mới trên hành tinh Pandora, nơi người Na'vi phải đối mặt với bộ tộc lửa hung hãn.",
-    "videoUrl": "https://www.youtube.com/embed/t5n5cDUE0Es"
+    "trailerUrl": "https://youtu.be/nb_fFj_0rq8",
+    "movieUrl": ""
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "quality": "4K",
     "poster": "img/captain-america-brave-new-world.jpg",
     "description": "Sam Wilson chính thức tiếp nhận khiên và đối mặt với một âm mưu toàn cầu phức tạp.",
-    "videoUrl": "https://youtu.be/KZoAe9bvQlw?list=RDYahn0ZscX4c"
+    "trailerUrl": "https://youtu.be/1pHDWnXmK7Y",
+    "movieUrl": ""
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "quality": "Full HD",
     "poster": "img/one-piece-deo-hai-tac.jpg",
     "description": "Cuộc phiêu lưu mới đầy kịch tính của băng mũ rơm tại một hòn đảo kỳ diệu.",
-    "videoUrl": ""
+    "trailerUrl": "",
+    "movieUrl": ""
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "quality": "4K",
     "poster": "img/super-mario-bros-movie-2.jpg",
     "description": "Cuộc phiêu lưu mới đầy màu sắc của anh em nhà Mario trong thế giới nấm kỳ diệu.",
-    "videoUrl": ""
+    "trailerUrl": "https://youtu.be/LX9kXRRJlPw",
+    "movieUrl": ""
   },
   {
     "id": 5,
@@ -47,46 +51,51 @@
     "quality": "Full HD",
     "poster": "img/the-batman-part-ii.jpg",
     "description": "Bruce Wayne tiếp tục hành trình truy tìm công lý trong bóng tối tại thành phố Gotham.",
-    "videoUrl": ""
+    "trailerUrl": "https://youtu.be/T7_zMl_ZhdQ",
+    "movieUrl": ""
   },
   {
+    "id": 8,
     "title": "Superman",
     "year": 2024,
     "category": "Khoa Học Viễn Tưởng",
     "quality": "4K",
     "poster": "img/superman.jpg",
-    "description": "Superman là bộ phim siêu anh hùng năm 2025 của Hoa Kỳ dựa trên nhân vật cùng tên của DC Comics...",
-    "videoUrl": "",
-    "id": 8
+    "description": "Superman là bộ phim siêu anh hùng năm 2025 của Hoa Kỳ dựa trên nhân vật cùng tên của DC Comics.",
+    "trailerUrl": "https://youtu.be/Ox8ZLF6cGM0",
+    "movieUrl": ""
   },
   {
+    "id": 9,
     "title": "Doraemon Nobita và bản giao hưởng Địa Cầu",
     "year": 2024,
-    "category": "Phim hoạt hình , phiêu lưu ",
+    "category": "Phim hoạt hình , phiêu lưu",
     "quality": "4K",
     "poster": "img/Doraemon Nobita và bản giao hưởng Địa Cầu.jpg",
-    "description": "Doraemon: Nobita và bản giao hưởng Địa Cầu là bộ phim hoạt hình phiêu lưu...",
-    "videoUrl": "",
-    "id": 9
+    "description": "Doraemon: Nobita và bản giao hưởng Địa Cầu là bộ phim hoạt hình phiêu lưu âm nhạc hấp dẫn.",
+    "trailerUrl": "https://youtu.be/wbTZXCHzJlA",
+    "movieUrl": "https://youtu.be/aiEzbK3YszI"
   },
   {
+    "id": 10,
     "title": "Godzilla x Kong: The New Empire",
     "year": 2024,
     "category": "Khoa Học Viễn Tưởng",
     "quality": "4K",
     "poster": "img/Godzilla x Kong The New Empire.jpg",
-    "description": "Godzilla and the almighty Kong face a colossal threat hidden deep within the planet...",
-    "videoUrl": "",
-    "id": 10
+    "description": "Godzilla and the almighty Kong face a colossal threat hidden deep within the planet.",
+    "trailerUrl": "https://youtu.be/lV1OOlGwExM",
+    "movieUrl": ""
   },
   {
-    "title": " Chuyện Nhà Bánh Xếp",
+    "id": 11,
+    "title": "Chuyện Nhà Bánh Xếp",
     "year": 2024,
     "category": "Tâm Lý - Tình Cảm",
     "quality": "4K",
     "poster": "img/Chuyện Nhà Bánh Xếp.jpg",
-    "description": "Chuyện Nhà Bánh Xếp là câu chuyện ấm áp và giàu cảm xúc về ông Ham Mu Ok...",
-    "videoUrl": "",
-    "id": 11
+    "description": "Chuyện Nhà Bánh Xếp là câu chuyện ấm áp và giàu cảm xúc về ông Ham Mu Ok.",
+    "trailerUrl": "https://youtu.be/hI5uouC_AmQ",
+    "movieUrl": ""
   }
 ]
