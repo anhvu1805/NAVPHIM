@@ -80,5 +80,6 @@ app.get("/video", (req, res) => {
     }
 });
 
+
 app.listen(PORT, () => console.log(`Server chạy tại http://localhost:${PORT}`));
 app.listen(3000, () => console.log('Server running at http://localhost:3000'));
